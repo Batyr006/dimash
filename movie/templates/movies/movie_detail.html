@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ movie.title }}</title>
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <p><b>Описание:</b> {{ movie.description }}</p>
+    <p><b>Продюсер:</b> {{ movie.producer }}</p>
+    <p><b>Длительность:</b> {{ movie.duration }} секунд</p>
+    <a href="/api/movies/{{ movie.id }}/delete/">Удалить фильм</a>
+</body>
+</html>

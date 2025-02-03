@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список статей</title>
+</head>
+<body>
+    <h1>Список статей</h1>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <a href="/api/articles/{{ article.id }}/">{{ article.title }}</a> — {{ article.text|truncatechars:50 }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

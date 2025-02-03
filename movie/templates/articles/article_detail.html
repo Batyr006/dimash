@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+</head>
+<body>
+    <h1>{{ article.title }}</h1>
+    <p><b>Автор:</b> {{ article.author }}</p>
+    <p>{{ article.text }}</p>
+    <a href="/api/articles/{{ article.id }}/delete/">Удалить статью</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список фильмов</title>
+</head>
+<body>
+    <h1>Список фильмов</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                <a href="/api/movies/{{ movie.id }}/">{{ movie.title }}</a> — {{ movie.description }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
